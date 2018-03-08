@@ -1,0 +1,30 @@
+{
+	"users": [
+		{
+			"_id": "Juliette",
+			"age": 24
+		},
+		{
+			"_id": "Clément",
+			"age": 42
+		},
+		{
+			"_id": "Christine",
+			"age": 65
+		}
+	],
+	"products": [
+		{
+			"_id": "Dyson_Supersonic",
+			"price": 399.99
+		},
+		{
+			"_id": "Lindt_Black_chocolate",
+			"price": 3.99
+		},
+		{
+			"_id": "iPhone_X",
+			"price": 1159.00
+		}
+	]
+}

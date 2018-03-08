@@ -1,0 +1,34 @@
+{
+  "name": "mini-demooz",
+  "version": "1.0.0",
+  "description": "A base to a Demooz web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melaniegarnier/mini-demooz.git"
+  },
+  "keywords": [
+    "demooz",
+    "web",
+    "exercise",
+    "mongodb",
+    "angular",
+    "express"
+  ],
+  "author": "MG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melaniegarnier/mini-demooz/issues"
+  },
+  "homepage": "https://github.com/melaniegarnier/mini-demooz#readme",
+  "dependencies": {
+    "commander": "^2.14.1",
+    "express": "^4.16.2",
+    "jsonfile": "^4.0.0",
+    "mongodb": "^3.0.4",
+    "winston": "^2.4.0"
+  }
+}

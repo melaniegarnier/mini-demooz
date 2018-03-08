@@ -1,0 +1,6 @@
+{
+	"mongoVar" : {
+		"dbName": "minidem",
+		"url": "mongodb://localhost:27017"
+	}
+}
