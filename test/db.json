@@ -1,5 +1,5 @@
 {
-	"users": [
+	"user": [
 		{
 			"_id": "Juliette",
 			"age": 24
@@ -13,7 +13,7 @@
 			"age": 65
 		}
 	],
-	"products": [
+	"product": [
 		{
 			"_id": "Dyson_Supersonic",
 			"price": 399.99
