@@ -1,2 +1,33 @@
-<p>miniDem en action !</p>
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- modules -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+
+		<!-- custom JS scripts -->
+		<script type="text/javascript" src="/root/main.js"></script>
+		<script type="text/javascript" src="/sh/sweet-home.js"></script>
+		<script type="text/javascript" src="/ep/el-padre.js"></script>
+		<script type="text/javascript" src="/ac/array-comp.js"></script>
+		<script type="text/javascript" src="/sb/search-bar.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/root/main.css">
+		<link rel="stylesheet" type="text/css" href="/sh/sweet-home.css">
+		<link rel="stylesheet" type="text/css" href="/ep/el-padre.css">
+		<link rel="stylesheet" type="text/css" href="/ac/array-comp.css">
+		<link rel="stylesheet" type="text/css" href="/sb/search-bar.css">
+
+		<base href="/">
+		<title>Mini Demooz</title>
+	</head>
+
+	<body ng-app="miniDem">
+		
+		<!-- single page -->
+		<ui-view></ui-view>
+
+	</body>
+</html>
+

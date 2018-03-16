@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/melaniegarnier/mini-demooz#readme",
   "dependencies": {
+    "JSON": "^1.0.0",
+    "body-parser": "^1.18.2",
     "commander": "^2.14.1",
     "express": "^4.16.2",
     "jsonfile": "^4.0.0",

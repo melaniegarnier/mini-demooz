@@ -1,3 +1,7 @@
+/*
+* Main : call angular and set routes
+*/
+
 var app = angular.module('miniDem', ['ui.router']);
 
 app.config(["$locationProvider", function($locationProvider) {
@@ -7,23 +11,19 @@ app.config(["$locationProvider", function($locationProvider) {
 
 /* routing for the single page */
 app.config(($stateProvider, $urlRouterProvider) => {
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/minidem');
 
 	$stateProvider
 	.state('home', {
-		url: '/',
-		templateUrl: '/root/main.html'
-	})
-	.state('search-bar', {
-		url: '/search-bar',
-		template: '<search-bar></search-bar>',
-		controller: searchBarCtrl,
+		url: '/minidem',
+		template: '<sweet-home></sweet-home>',
+		controller: sweetHomeCtrl,
 		controllerAs: 'ctrl'
 	})
-	.state('array-comp', {
-		url: '/minidem/:key/:name',
-		template: '<array-comp></array-comp>',
-		controller: arrayCompCtrl,
-		controllerAs: 'ctrl'
+	.state('search', {
+		url: '/minidem/:objType/:name',
+		template: '<el-padre></el-padre>',
+		controller: elPadreCtrl
 	});
-})
+});
+

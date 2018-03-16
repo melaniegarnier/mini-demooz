@@ -1,0 +1,37 @@
+
+<div ng-show="ctrl.error==null">
+	<h1 ng-bind="ctrl.header"></h1>
+
+	<h3>
+		<span ng-show="ctrl.objType=='user'">Fiche utilisateur : </span>
+		<span ng-show="ctrl.objType=='product'">Fiche produit : </span>
+		<span ng-bind="ctrl.nameReq"></span>
+	</h3>
+
+	<br>
+
+	<!-- search bar for user page -->
+	<search-bar data="ctrl.dataSearchBar[ctrl.objType]" func="ctrl.addRelation" ng-show="ctrl.objType=='user'"></search-bar>
+
+	<!-- search bar for product page -->
+	<search-bar data="ctrl.dataSearchBar[ctrl.objType]" func="ctrl.addRelation" ng-show="ctrl.objType=='product'"></search-bar>
+
+	<br>
+	<br>
+	<br>
+
+	<!-- arrays for user page -->
+	<array-comp class="left" data="ctrl.dataArrays[ctrl.objType].own" ng-show="ctrl.objType=='user'"></array-comp>
+	<array-comp class="right" data="ctrl.dataArrays[ctrl.objType].test" ng-show="ctrl.objType=='user'"></array-comp>
+
+	<!-- arrays for product page -->
+	<array-comp class="left" data="ctrl.dataArrays[ctrl.objType].own" ng-show="ctrl.objType=='product'"></array-comp>
+	<array-comp class="right" data="ctrl.dataArrays[ctrl.objType].test" ng-show="ctrl.objType=='product'"></array-comp>
+</div>
+
+<div ng-show="ctrl.error!==null">
+	<h3>ERROR :</h3>
+	<p ng-bind="ctrl.error"></p>
+</div>
+
+
