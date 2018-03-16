@@ -2,7 +2,7 @@
 A base to a Demooz web server
 
 ## Installation
-You need to installed MongoDB. Then use :
+You need to installed MongoDB. Then use in your terminal :
 
 ```
 git clone https://github.com/melaniegarnier/mini-demooz.git
@@ -20,7 +20,13 @@ node index.js -h
 to display help and the commands. 
 
 ### First usage
-Use the `--init` option to fill the database (for example with the `db.json` we provide) :
+In a terminal, run the MongoDB deamon with :
+
+```
+mongod
+```
+
+In another terminal, use the `--init` option to fill the database (for example with the `db.json` we provide) :
 
 ```
 node index.js --init ./test/db.json --conf conf.json
@@ -30,4 +36,9 @@ Then load the URL `localhost:3344/minidem/` to go to the home page. All the inst
 
 > Note : option `--conf` is mandatory to sett the program whereas option `--init` is optional.
 > Note bis : you need an internet connection to run.
+
+## Contact
+Mélanie Garnier  
+melanie.mc.garnier@gmail.com
+
 
