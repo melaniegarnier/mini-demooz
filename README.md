@@ -37,6 +37,11 @@ Then load the URL `localhost:3344/minidem/` to go to the home page. All the inst
 > Note : option `--conf` is mandatory to sett the program whereas option `--init` is optional.
 > Note bis : you need an internet connection to run.
 
+## Code specifications
+- `user` and `product` are objects : what I call `objType`
+- an object has a `name`, unique in his type : `Juliette` is unique for the type `user`
+- `own` and `test` are relations
+
 ## Contact
 Mélanie Garnier  
 melanie.mc.garnier@gmail.com
